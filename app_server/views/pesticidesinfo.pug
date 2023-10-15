@@ -1,0 +1,32 @@
+html
+  head
+    title pesticide Details
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+    style.
+      .pesticide-details {
+        background-color: #f7f7f7;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        margin-top: 20px;
+      }
+      .container {
+        margin-top: 50px;
+      }
+  body
+    .container
+      h1.text-center pesticide Details
+      .pesticide-details
+        img(src=pesticide.image)
+        h3 pesticide Name: #{pesticide.name}
+        
+        p Description: #{pesticide.desc}
+        p Price:₹ #{pesticide.price} 
+        p MRP:₹
+            strike #{pesticide.MRP}
+        p Discount:₹ #{pesticide.MRP -pesticide.price}
+        p Availability: #{pesticide.avail}
+
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')

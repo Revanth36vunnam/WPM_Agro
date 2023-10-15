@@ -1,0 +1,32 @@
+html
+  head
+    title organic Details
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+    style.
+      .organic-details {
+        background-color: #f7f7f7;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        margin-top: 20px;
+      }
+      .container {
+        margin-top: 50px;
+      }
+  body
+    .container
+      h1.text-center organic Details
+      .organic-details
+        img(src=organic.image)
+        h3 organic Name: #{organic.name}
+        
+        p Description: #{organic.desc}
+        p Price:₹ #{organic.price} 
+        p MRP:₹
+            strike #{organic.MRP}
+        p Discount:₹ #{organic.MRP - organic.price}
+        p Availability: #{organic.avail}
+
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
